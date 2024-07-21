@@ -25,7 +25,8 @@ if __name__ == "__main__":
 
 # Explanation:
 
-Imports: Uses pynput to listen to keyboard events.
-on_press function: Captures and logs keystrokes to a file named keylog.txt.
-start_keylogger function: Initializes the keylogger and starts listening for keypresses.
-Important Note: This code is only for educational and ethical hacking purposes. Unauthorized use of such scripts is illegal and unethical. Always get proper authorization before testing any security vulnerabilities.
+## Imports: Uses pynput to listen to keyboard events.
+## on_press function: Captures and logs keystrokes to a file named keylog.txt.
+## start_keylogger function: Initializes the keylogger and starts listening for keypresses.
+
+#Important Note: This code is only for educational and ethical hacking purposes. Unauthorized use of such scripts is illegal and unethical. Always get proper authorization before testing any security vulnerabilities.
