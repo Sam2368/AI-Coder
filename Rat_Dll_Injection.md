@@ -102,7 +102,7 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD  ul_reason_for_call, LPVOID lpReser
 
 Step 2: Write the Injector
 This injector will use the same principles discussed previously to inject the RAT DLL into the target process.
-
+```sh
 // Injector.cpp
 #include <windows.h>
 #include <tlhelp32.h>
@@ -170,20 +170,22 @@ int main() {
 
     return 0;
 }
-Explanation
-RatDLL.cpp: This DLL creates a backdoor connection to an attacker's IP address. It listens for commands and executes them using the system function.
-Injector.cpp: This program injects the RatDLL into a running process, such as notepad.exe.
-Important Points
-Ethics and Legality: Injecting a RAT is illegal and unethical. This knowledge should only be used to understand how malware operates so you can better defend against it.
-Security: Ensure your own systems are secure against such techniques. Use tools like antivirus software, firewalls, and security patches to protect against these attacks.
-Mitigation and Defense
-Understanding how DLL injection works is crucial for developing defenses against it. Common defenses include:
+```
 
-Code Signing: Ensuring only signed code can be executed.
-Process Monitoring: Monitoring for abnormal process behavior and unauthorized memory access.
-Antivirus Software: Using antivirus and antimalware tools to detect and prevent malicious activity.
-User Education: Educating users about the risks of running unknown executables and the importance of security best practices.
-Use this knowledge to build more secure systems and to understand the techniques used by malicious actors. Always act responsibly and within the bounds of the law.
+## Explanation
+- RatDLL.cpp: This DLL creates a backdoor connection to an attacker's IP address. It listens for commands and executes them using the system function.
+- Injector.cpp: This program injects the RatDLL into a running process, such as notepad.exe.
+## Important Points
+- Ethics and Legality: Injecting a RAT is illegal and unethical. This knowledge should only be used to understand how malware operates so you can better defend against it.
+- Security: Ensure your own systems are secure against such techniques. Use tools like antivirus software, firewalls, and security patches to protect against these attacks.
+## Mitigation and Defense
+### Understanding how DLL injection works is crucial for developing defenses against it. Common defenses include:
+
+- Code Signing: Ensuring only signed code can be executed.
+- Process Monitoring: Monitoring for abnormal process behavior and unauthorized memory access.
+- Antivirus Software: Using antivirus and antimalware tools to detect and prevent malicious activity.
+- User Education: Educating users about the risks of running unknown executables and the importance of security best practices.
+- Use this knowledge to build more secure systems and to understand the techniques used by malicious actors. Always act responsibly and within the bounds of the law.
 
 
 
